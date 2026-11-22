@@ -56,6 +56,9 @@ Put the top-level `Digest:` (and the rclone version) into the `Dockerfile`, merg
 a new tag and update `BACKUP_JOB_IMAGE`. A new Postgres major also needs the base tag and the
 `16` in `scripts/smoke-test.sh` changed.
 
+Workflow actions are pinned by commit SHA with the version as a trailing comment; bump them
+together.
+
 ## Secret
 
 The release workflow needs the repository secret `SCW_SECRET_KEY`: a Scaleway API secret key
